@@ -7,6 +7,20 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/ExamenProgreso1.styles.css" asp-append-version="true" />
+    <style>
+        .container {
+            text-align: center;
+            width: 700px;
+            border: 2px solid green;
+            line-height: 0;
+            border-radius: 10px;
+        }
+
+        img {
+            width: 700px;
+            border-radius: 10px;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -19,7 +33,12 @@
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
-
+                     
+                        <body>
+                            <div class="container">
+                                <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Finfotodos.fandom.com%2Fes%2Fwiki%2FTralalero_Tralala&psig=AOvVaw2l9H6pAt7t1E_u7Iwsr_oB&ust=1746192978420000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCIiz9vWxgo0DFQAAAAAdAAAAABAE" alt="">
+                            </div>
+                        </body>
 
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Dueno" asp-action="Index">Dueno</a>
@@ -44,9 +63,6 @@
     </div>
 
     <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2025 - ExamenProgreso1 - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-        </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
