@@ -1,4 +1,4 @@
-﻿@model IEnumerable<ExamenProgreso1.Models.Cita>
+﻿@model IEnumerable<ExamenProgreso1.Models.Mascota>
 
 @{
     ViewData["Title"] = "Index";
@@ -13,16 +13,19 @@
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.Fecha)
+                @Html.DisplayNameFor(model => model.Nombre)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Hora)
+                @Html.DisplayNameFor(model => model.cumple)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.razon)
+                @Html.DisplayNameFor(model => model.aspecto)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.NombreVeterinario)
+                @Html.DisplayNameFor(model => model.pablomontalvo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Dueno)
             </th>
             <th></th>
         </tr>
@@ -31,16 +34,19 @@
 @foreach (var item in Model) {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.Fecha)
+                @Html.DisplayFor(modelItem => item.Nombre)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Hora)
+                @Html.DisplayFor(modelItem => item.cumple)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.razon)
+                @Html.DisplayFor(modelItem => item.aspecto)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.NombreVeterinario)
+                @Html.DisplayFor(modelItem => item.pablomontalvo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Dueno.Correo)
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |

@@ -7,7 +7,10 @@ namespace ExamenProgreso1.Models
     {
         [Key]
         public int Id { get; set; }
+        [StringLength(30)]//El nombre mas largo del mundo tiene 85 caracteres.
         public string Nombre { get; set; }
+        [EmailAddress]
+        [Required(ErrorMessage ="Nesecario el correo señor porfavor.")]
         public string Correo { get; set; }
         //Foreing Key
         public int CitaId { get; set; }

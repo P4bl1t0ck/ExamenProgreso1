@@ -13,4 +13,8 @@ using ExamenProgreso1.Models;
         }
 
         public DbSet<ExamenProgreso1.Models.Cita> Cita { get; set; } = default!;
+
+public DbSet<ExamenProgreso1.Models.Dueno> Dueno { get; set; } = default!;
+
+public DbSet<ExamenProgreso1.Models.Mascota> Mascota { get; set; } = default!;
     }
